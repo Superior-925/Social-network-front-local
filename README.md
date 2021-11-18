@@ -22,7 +22,7 @@ The application is written by HTML/SCSS/TypeScript/Angular
  - Clone the repository
  
   ```sh
-  $ git clone https://github.com/Superior-925/Social-network-frontend-angular.git
+  $ git clone https://github.com/Superior-925/Social-network-front-local.git
   ```
 
 - Go to project folder
