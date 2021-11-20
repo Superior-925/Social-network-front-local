@@ -29,10 +29,10 @@ export class UserProfileService {
     return this.http.get<responseUserInfo>(`http://${configDev.host}:${configDev.port}/user/info/`+userId, httpOptionsGet);
   }
 
-  searchFriends(name: string): Observable<searchFriends> {
+  searchFriends(name: string, ignoreIds: any): Observable<searchFriends> {
     let httpOptionsGet: {} = {
       headers: new HttpHeaders({'Content-Type': 'application/json'}),
-      observe: 'response', params: {param: name}};
+      observe: 'response', params: {name: name, ids: ignoreIds}};
     return this.http.get<searchFriends>(`http://${configDev.host}:${configDev.port}/friends/search/`, httpOptionsGet);
   }
 
